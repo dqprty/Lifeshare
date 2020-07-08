@@ -1,19 +1,45 @@
 .wrapper
   .hoom
     .header
-      .header__top
+      %hi.header__top
         Lifeshare
       .header__logo
         .header__logo__user
           = icon('fas', 'house-user', class:'icon')
         .header__logo__logu
           = icon('fas', 'cog', class:'icon')
-    .side
-      .side__header
-        .side__header__group
-          グループリスト
-        .side__header__edit
-          = icon('fas', 'people-arrows', class:'edit')
-      .side__main
-    .main
-
+    .contens
+      .side
+        .side__header
+          %h2.side__header__group
+            グループリスト
+          .side__header__edit
+            = icon('fas', 'people-arrows', class:'edit')
+        .side__grouplist
+          .side__grouplist__name
+            グループ名
+      .main
+        .main__header
+          %h3.main__header__group
+            goupname
+        .main__calendar
+          .main__calendar__plan
+            .box
+              .box__nen
+                2020
+              .box__date
+                .box__date__tuki
+                  7
+                .box__date__niti
+                  8
+          .main__calendar__content
+            .box
+              .box__username
+                平さん
+              .box__message
+                今日は社員会議が17:45分から行われます。休みの人もzoomで参加するようにお願いします！追記 たりひんからなんか描いてます
+            .box
+              .box__username
+                平さん
+              .box__message
+                今日は社員会議が17:45分から行われます。
