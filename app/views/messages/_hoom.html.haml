@@ -5,22 +5,30 @@
         Lifeshare
       .header__logo
         .header__logo__user
-          = icon('fas', 'house-user', class:'icon')
-        .header__logo__logu
-          = icon('fas', 'cog', class:'icon')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'house-user', class:'icon')
+          %h2.header__logo__user__name
+            = current_user.name
     .contens
       .side
         .side__header
-          %h2.side__header__group
+          %h3.side__header__group
             グループリスト
+          .side__header__new
+            = link_to new_group_path do
+              = icon('fas', 'people-arrows', class:'edit')
           .side__header__edit
-            = icon('fas', 'people-arrows', class:'edit')
-        .side__grouplist
-          .side__grouplist__name
-            グループ名
+            = link_to edit_group_path(current_user) do
+              = icon('fas', 'cog', class:'edit')
+        .side__group
+          - current_user.groups.each do |group|
+            .side__group__list
+              = link_to '#', class:"a" do
+                .side__group__list__name
+                  = group.name
       .main
         .main__header
-          %h3.main__header__group
+          %h4.main__header__group
             goupname
         .main__calendar
           .main__calendar__plan
