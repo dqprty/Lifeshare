@@ -1,0 +1,8 @@
+.box
+  .box__username
+    = message.user.name
+  .box__message
+    - if message.content.present?
+      %p.box__message__content
+        = message.content
+    = image_tag message.image.url, class: 'box__message__image' if message.image.present?

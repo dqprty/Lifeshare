@@ -1,0 +1,54 @@
+<<<<<<< Updated upstream
+.hoom
+  .light
+    .main
+      .main__top
+        %h2.main__top__name
+          = current_user.name
+        .main__footer
+          = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
+            .input-box
+              = f.text_field :content, class: 'input-box__text', placeholder: 'message'
+              = f.label :image, class: 'input-box__image' do
+                = icon('fas', 'camera', class: 'input-box__icon')
+                = f.file_field :image, class: 'input-box__image__file'
+            = f.submit 'Go', class: 'submit__btn'
+      .main__header
+        %h4.main__header__group
+          = @group.name
+        .main__header__edit
+          = link_to edit_group_path(@group) do
+            = icon('fas', 'cog', class:'edit')
+      .main__calendar
+        .main__calendar__plan
+          
+        .main__calendar__content
+          = render partial: 'message', collection: @messages
+=======
+.wrapper
+  .main
+    .main__header
+      %h4.main__header__group
+        goupname
+    .main__calendar
+      .main__calendar__plan
+        .box
+          .box__nen
+            2020
+          .box__date
+            .box__date__tuki
+              7
+            .box__date__niti
+              8
+      .main__calendar__content
+        .box
+          .box__username
+            平さん
+          .box__message
+            今日は社員会議が17:45分から行われます。休みの人もzoomで参加するようにお願いします！追記 たりひんからなんか描いてます
+        .box
+          .box__username
+            平さん
+          .box__message
+            今日は社員会議が17:45分から行われます。
+>>>>>>> Stashed changes

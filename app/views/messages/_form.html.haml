@@ -1,0 +1,8 @@
+.footer
+  = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
+    .input__box
+      = f.text_field :content, class: 'input__box__content', placeholder: 'message'
+      = f.label :image, class: 'input__box__image' do
+        = icon('fas', 'camera', class:'input__box__icon')
+        = f.file_field :image, class: 'input__box__image__field'
+    = f.submit 'Send', class: 'form__submit'

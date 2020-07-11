@@ -1,5 +1,5 @@
-.wrapper
-  .hoom
+.hoom
+  .left
     .header
       %hi.header__top
         Lifeshare
@@ -7,6 +7,21 @@
         .header__logo__user
           = link_to edit_user_path(current_user) do
             = icon('fas', 'house-user', class:'icon')
+<<<<<<< Updated upstream
+    .side
+      .side__header
+        %h3.side__header__group
+          グループリスト
+        .side__header__new
+          = link_to new_group_path do
+            = icon('fas', 'people-arrows', class:'edit')
+      .side__group
+        - current_user.groups.each do |group|
+          .side__group__list
+            = link_to group_messages_path(group), class:"a" do
+              .side__group__list__name
+                = group.name
+=======
           %h2.header__logo__user__name
             = current_user.name
     .contens
@@ -23,31 +38,7 @@
         .side__group
           - current_user.groups.each do |group|
             .side__group__list
-              = link_to '#', class:"a" do
+              = link_to group_messages_path(group), class:"a" do
                 .side__group__list__name
                   = group.name
-      .main
-        .main__header
-          %h4.main__header__group
-            goupname
-        .main__calendar
-          .main__calendar__plan
-            .box
-              .box__nen
-                2020
-              .box__date
-                .box__date__tuki
-                  7
-                .box__date__niti
-                  8
-          .main__calendar__content
-            .box
-              .box__username
-                平さん
-              .box__message
-                今日は社員会議が17:45分から行われます。休みの人もzoomで参加するようにお願いします！追記 たりひんからなんか描いてます
-            .box
-              .box__username
-                平さん
-              .box__message
-                今日は社員会議が17:45分から行われます。
+>>>>>>> Stashed changes
