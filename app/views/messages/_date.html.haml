@@ -1,0 +1,8 @@
+.date
+  .date__nen
+    = message.created_at.strftime("%Y")
+  .date__gatu
+    .date__gatu__tuki
+      = message.created_at.strftime("%m")
+    .date__gatu__niti
+      = message.created_at.strftime("%d")

@@ -1,44 +1,63 @@
 * {
   box-sizing: border-box;
 }
+<<<<<<< Updated upstream
+
+.wrapper{
+  display:flex;
+}
 
 .hoom{
   background-color:lightgreen;
-  height:100vh;
-  .header{
-    width:100%;
-    height:50px;
-    display:flex;
-    align-items:center;
-    &__top{
-      font-family:'Ubuntu Mono', monospace;
-      font-size:40px;
-      margin-left:30px;
-      color:white;
-    }
-    &__logo{
+  width:100vw;
+  .left{
+    width:280px;
+    .header{
+=======
+.wrapper{
+  .hoom{
+    background-color:lightgreen;
+    height:100vh
+    .header{
+      width:350px;
+>>>>>>> Stashed changes
+      height:50px;
       display:flex;
-      .icon{
-        margin:7px 0 0 20px;
-        font-size:30px;
+      align-items:center;
+      &__top{
+        font-family:'Ubuntu Mono', monospace;
+        font-size:40px;
+<<<<<<< Updated upstream
+        margin:10px 0 0 20px;
+=======
+        margin-left:30px;
+>>>>>>> Stashed changes
         color:white;
       }
-      &__user{
+      &__logo{
         display:flex;
-        align-items:center;
-        &__name{
-          font-size:18px;
-          margin:20px 0 0 15px;
+        .icon{
+          margin:7px 0 0 20px;
+          font-size:30px;
           color:white;
+        }
+        &__user{
+          display:flex;
+          align-items:center;
+<<<<<<< Updated upstream
+=======
+          &__name{
+            font-size:18px;
+            margin:20px 0 0 15px;
+            color:white;
+          }
+>>>>>>> Stashed changes
         }
       }
     }
-  }
-  .contens{
-    display:flex;
     .side{
       width:250px;
-      margin: 10px 0 0 10px;
+      margin: 20px 0 0 10px;
       &__header{
         height:50px;
         background-color:rgb(0, 247, 255);
@@ -46,31 +65,27 @@
         display:flex;
         align-items:center;
         &__group{
-          padding-left:15px;
-          font-size:18px;
+          padding:0 20px 0 20px;
+          font-size:20px;
           color:white;
         }
         &__new{
           margin-left:20px;
         }
-        &__edit{
-          margin-left:30px;
-        }
         .edit{
-          font-size:20px;
           color:white;
+          font-size:20px;
         }
       }
       &__group{
         margin:10px 0 10px 0;
         height:630px;
         border-radius:25px;
-        background-color:orange;
         overflow:scroll;
         &__list{
           margin:25px 10px 0 25px;
           &__name{
-            font-size:19px;
+            font-size:24px;
             color:white;
             text-decoration:none;
           }
@@ -80,14 +95,70 @@
         }
       }
     }
+  }
+<<<<<<< Updated upstream
+  .light{
     .main{
       border-radius:30px;
-      width:1100px;
-      height:700px;
-      margin:10px 20px 0 20px;
+      width:1070px;
+      height:750px;
+      margin:10px 20px 0 0px;
+      &__top{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        &__name{
+          font-size:30px;
+          color:white;
+          margin:0 130px 0 20px;
+        }
+        .main__footer{
+          height:50px;
+          background-color:lightgreen;
+          margin-bottom:10px;
+          .form{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background-color:lightgreen;
+            .input-box{
+              position:relative;
+              width:100%;
+              background-color:lightgreen;
+              &__text{
+                border-style:none;
+                border-radius:30px;
+                height:50px;
+                width:500px;
+                padding:0 70px 0 30px;
+                outline:0;
+              }
+              &__image{
+                height:50px;
+                position:absolute;
+                right:30px;
+                padding-top:3px;
+                font-size:30px;
+                &__file{
+                  display:none;
+                }
+              }
+            }
+            .submit__btn{
+              background-color:orange;
+              border-style:none;
+              color:white;
+              height:40px;
+              width:55px;
+              border-radius:30px;
+              outline:0;
+              margin-left:15px;
+            }
+          }
+        }
+      }
       &__header{
         border-radius:30px;
-        width:1100px;
         height:60px;
         background:rgb(0, 247, 255);
         display:flex;
@@ -96,6 +167,13 @@
         &__group{
           font-size:33px;
           color:white;
+          margin-right:30px;
+        }
+        &__edit{
+          font-size:30px;
+          .edit{
+            color:white;
+          }
         }
       }
       &__calendar{
@@ -103,17 +181,17 @@
         height:630px;
         &__plan{
           border-radius:0 0 0 20px;
-          width:250px;
+          width:220px;
           background-color:lightgreen;
           overflow: scroll;
           padding: 0px 20px;
-          .box{
+          .date{
             margin:30px 0 0 15px;
             color:white;
             &__nen{
               font-size:18px;
             }
-            &__date{
+            &__gatu{
               display:flex;
               &__tuki{
                 font-size:25px;
@@ -131,15 +209,75 @@
           width:850px;
           background-color:white;
           overflow: scroll;
-          margin:10px 0;
+          margin:10px 0 0 0;
           .box{
-            margin:30px 20px 0 25px;
+            margin:25px 20px 15px 25px;
             &__username{
               font-size:15px;
             }
             &__message{
               font-size:20px;
             }
+=======
+  .main{
+    border-radius:30px;
+    width:1100px;
+    height:700px;
+    margin:10px 20px 0 20px;
+    &__header{
+      border-radius:30px;
+      height:60px;
+      background:rgb(0, 247, 255);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      &__group{
+        font-size:33px;
+        color:white;
+      }
+    }
+    &__calendar{
+      display:flex;
+      height:630px;
+      &__plan{
+        border-radius:0 0 0 20px;
+        width:250px;
+        background-color:lightgreen;
+        overflow: scroll;
+        padding: 0px 20px;
+        .box{
+          margin:30px 0 0 15px;
+          color:white;
+          &__nen{
+            font-size:18px;
+          }
+          &__date{
+            display:flex;
+            &__tuki{
+              font-size:25px;
+              margin-left:10px;
+            }
+            &__niti{
+              font-size:38px;
+              margin:5px 0 0 5px;
+            }
+          }
+        }
+      }
+      &__content{
+        border-radius:20px;
+        width:850px;
+        background-color:white;
+        overflow: scroll;
+        margin:10px 0;
+        .box{
+          margin:30px 20px 0 25px;
+          &__username{
+            font-size:15px;
+          }
+          &__message{
+            font-size:20px;
+>>>>>>> Stashed changes
           }
         }
       }
