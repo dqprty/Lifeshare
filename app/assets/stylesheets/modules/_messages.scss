@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-<<<<<<< Updated upstream
 
 .wrapper{
   display:flex;
@@ -13,25 +12,15 @@
   .left{
     width:280px;
     .header{
-=======
-.wrapper{
-  .hoom{
-    background-color:lightgreen;
-    height:100vh
-    .header{
       width:350px;
->>>>>>> Stashed changes
       height:50px;
       display:flex;
       align-items:center;
       &__top{
         font-family:'Ubuntu Mono', monospace;
         font-size:40px;
-<<<<<<< Updated upstream
         margin:10px 0 0 20px;
-=======
         margin-left:30px;
->>>>>>> Stashed changes
         color:white;
       }
       &__logo{
@@ -44,14 +33,11 @@
         &__user{
           display:flex;
           align-items:center;
-<<<<<<< Updated upstream
-=======
           &__name{
             font-size:18px;
             margin:20px 0 0 15px;
             color:white;
           }
->>>>>>> Stashed changes
         }
       }
     }
@@ -96,7 +82,6 @@
       }
     }
   }
-<<<<<<< Updated upstream
   .light{
     .main{
       border-radius:30px;
@@ -218,66 +203,6 @@
             &__message{
               font-size:20px;
             }
-=======
-  .main{
-    border-radius:30px;
-    width:1100px;
-    height:700px;
-    margin:10px 20px 0 20px;
-    &__header{
-      border-radius:30px;
-      height:60px;
-      background:rgb(0, 247, 255);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      &__group{
-        font-size:33px;
-        color:white;
-      }
-    }
-    &__calendar{
-      display:flex;
-      height:630px;
-      &__plan{
-        border-radius:0 0 0 20px;
-        width:250px;
-        background-color:lightgreen;
-        overflow: scroll;
-        padding: 0px 20px;
-        .box{
-          margin:30px 0 0 15px;
-          color:white;
-          &__nen{
-            font-size:18px;
-          }
-          &__date{
-            display:flex;
-            &__tuki{
-              font-size:25px;
-              margin-left:10px;
-            }
-            &__niti{
-              font-size:38px;
-              margin:5px 0 0 5px;
-            }
-          }
-        }
-      }
-      &__content{
-        border-radius:20px;
-        width:850px;
-        background-color:white;
-        overflow: scroll;
-        margin:10px 0;
-        .box{
-          margin:30px 20px 0 25px;
-          &__username{
-            font-size:15px;
-          }
-          &__message{
-            font-size:20px;
->>>>>>> Stashed changes
           }
         }
       }
