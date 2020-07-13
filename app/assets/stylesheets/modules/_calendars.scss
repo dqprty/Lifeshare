@@ -4,11 +4,11 @@
 
 .wrapper{
   display:flex;
-  background-color:lightgreen;
 }
 
 .hoom{
   background-color:lightgreen;
+  width:100vw;
   .left{
     width:280px;
     .header{
@@ -51,12 +51,12 @@
         display:flex;
         align-items:center;
         &__group{
-          padding:0 20px 0 25px;
-          font-size:25px;
+          padding:0 20px 0 20px;
+          font-size:20px;
           color:white;
         }
         &__new{
-          margin-left:30px;
+          margin-left:20px;
         }
         .edit{
           color:white;
@@ -64,10 +64,10 @@
         }
       }
       &__group{
+        margin:10px 0 10px 0;
         height:630px;
         border-radius:25px;
         overflow:scroll;
-        margin-bottom:20px;
         &__list{
           margin:25px 10px 0 25px;
           &__name{
@@ -78,54 +78,6 @@
           .a{
             text-decoration:none;
           }
-        }
-      }
-    }
-  }
-  .center{
-    width:250px;
-    &__top{
-      height:50px;
-      padding:15px 0 0 10px;
-      overflow:scroll;
-      &__name{
-        color:white;
-        font-size:25px;
-      }
-    }
-    &__naka{
-      height:50px;
-      background-color:orange;
-      margin-top:20px;
-      border-radius:25px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      &__date{
-        color:white;
-        font-size:25px;
-        padding-left:20px;
-      }
-      &__new{
-        padding-right:30px;
-      }
-      .new{
-        color:white;
-        font-size:25px;
-      }
-    }
-    &__bottom{
-      overflow:scroll;
-      box-sizing: border-box;
-      height:600px;
-      &__list{
-        margin:25px 10px 0 60px;
-        &__name{
-          font-size:30px;
-          color:white;
-        }
-        .a{
-          text-decoration:none;
         }
       }
     }
@@ -197,44 +149,13 @@
         display:flex;
         align-items:center;
         justify-content:space-between;
-        .footer{
-          height:40px;
-          margin-left:20px;
-          .form{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            .input-box{
-              width:100%;
-              &__text{
-                border-style:none;
-                border-radius:30px;
-                height:40px;
-                width:200px;
-                padding: 0 30px 0 20px;
-                outline:0;
-              }
-            }
-            .submit__btn{
-              background-color:orange;
-              border-style:none;
-              color:white;
-              height:40px;
-              width:55px;
-              border-radius:30px;
-              outline:0;
-              margin-left:15px;
-            }
-          }
-        }
         &__group{
-          font-size:40px;
+          font-size:33px;
           color:white;
-          margin:0 300px 10px 0 ;
+          margin-right:30px;
         }
         &__edit{
-          font-size:40px;
-          margin-right:20px;
+          font-size:30px;
           .edit{
             color:white;
           }
