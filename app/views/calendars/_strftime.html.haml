@@ -1,0 +1,19 @@
+.wrapper
+  .hoom
+    .center
+      .center__top
+        %h2.center__top__name
+          = current_user.name
+      .center__naka
+        %h5.center__naka__date
+          Schedule
+        .center__naka__new
+          = link_to new_group_calendar_path do
+            = icon('fas', 'calendar-plus', class:'new')
+      .center__bottom
+        - current_user.calendars.each do |calendar|
+          .center__bottom__list
+            = link_to group_messages_path(calendar), class:"a" do
+              .center__bottom__list__name
+                = calendar.date
+        
