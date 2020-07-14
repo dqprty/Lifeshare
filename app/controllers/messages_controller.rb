@@ -4,13 +4,13 @@ class MessagesController < ApplicationController
   def index
     @message = Message.new
     @messages = @calendar.messages.includes(:user)
-    @users = @group.group_users
+    @users = @calendar.group_users
   end
 
   def create
     @message = @calendar.messages.new(message_params)
     if @message.save
-      redirect_to group_messages_path(@group)
+      redirect_to calendar_messages_path(@calendar)
     else
       @messages = @calendar.messages.includes(:user)
       flash.now[:alert] = 'メッセージを入力してください。'

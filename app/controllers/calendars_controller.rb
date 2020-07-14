@@ -22,7 +22,7 @@ class CalendarsController < ApplicationController
   private
 
   def calendar_params
-    params.require(:calendar).permit(:date).merge(user_id: current_user.id)
+    params.require(:calendar).permit(:date).merge(user_id: current_user.id, group_id:[])
   end
 
   def set_group
