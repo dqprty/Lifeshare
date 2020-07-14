@@ -2,14 +2,16 @@ class CalendarsController < ApplicationController
   before_action :set_group
 
   def index
+    @calendars = @group
   end
 
   def new
     @calendar = Calendar.new
+    @calendars = @group.calendars.includes(:user)
   end
 
   def create
-    @calendar = Calendar.new(calendar_params)
+    @calendar = @group.calendars.new(calendar_params)
     if @calendar.save
       redirect_to group_calendars_path(@group)
     else

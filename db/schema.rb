@@ -50,12 +50,10 @@ ActiveRecord::Schema.define(version: 2020_07_13_034128) do
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "content"
     t.string "image"
-    t.bigint "group_id"
-    t.bigint "user_id"
+    t.integer "user_id"
+    t.integer "calendar_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["group_id"], name: "index_messages_on_group_id"
-    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -86,6 +84,4 @@ ActiveRecord::Schema.define(version: 2020_07_13_034128) do
   add_foreign_key "group_calendars", "groups"
   add_foreign_key "group_users", "groups"
   add_foreign_key "group_users", "users"
-  add_foreign_key "messages", "groups"
-  add_foreign_key "messages", "users"
 end
