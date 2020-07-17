@@ -10,13 +10,13 @@
     .side
       .side__header
         %h3.side__header__group
-          グループリスト
+          Grouplist
         .side__header__new
           = link_to new_group_path do
             = icon('fas', 'people-arrows', class:'edit')
       .side__group
         - current_user.groups.each do |group|
           .side__group__list
-            = link_to group_messages_path(group), class:"a" do
+            = link_to group_calendars_path(group), class:"a" do
               .side__group__list__name
                 = group.name

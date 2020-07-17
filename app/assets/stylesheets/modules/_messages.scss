@@ -4,11 +4,11 @@
 
 .wrapper{
   display:flex;
-  background-color:lightgreen;
+  background-color:rgb(32, 32, 32);
 }
 
 .hoom{
-  background-color:lightgreen;
+  background-color:rgb(32, 32, 32);
   .left{
     width:280px;
     .header{
@@ -46,7 +46,7 @@
       margin: 20px 0 0 10px;
       &__header{
         height:50px;
-        background-color:rgb(0, 247, 255);
+        background-color:rgb(87, 88, 88);
         border-radius:25px;
         display:flex;
         align-items:center;
@@ -95,7 +95,7 @@
     }
     &__naka{
       height:50px;
-      background-color:orange;
+      background-color:rgb(87, 88, 88);
       margin-top:20px;
       border-radius:25px;
       display:flex;
@@ -122,7 +122,7 @@
         margin:25px 10px 0 60px;
         &__name{
           font-size:30px;
-          color:rgb(255, 174, 0);
+          color:white;
         }
         .a{
           text-decoration:none;
@@ -133,108 +133,67 @@
   .light{
     .main{
       border-radius:30px;
-      width:1070px;
-      height:750px;
-      margin:10px 20px 0 0px;
-      &__top{
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        &__name{
-          font-size:30px;
-          color:white;
-          margin:0 130px 0 20px;
-        }
-        .main__footer{
-          height:50px;
-          background-color:lightgreen;
-          margin-bottom:10px;
-          .form{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            background-color:lightgreen;
-            .input-box{
-              position:relative;
-              width:100%;
-              background-color:lightgreen;
-              &__text{
-                border-style:none;
-                border-radius:30px;
-                height:50px;
-                width:500px;
-                padding:0 70px 0 30px;
-                outline:0;
-              }
-              &__image{
-                height:50px;
-                position:absolute;
-                right:30px;
-                padding-top:3px;
-                font-size:30px;
-                &__file{
-                  display:none;
-                }
-              }
-            }
-            .submit__btn{
-              background-color:orange;
+      width:840px;
+      height:690px;
+      margin:10px 10px 0 15px;
+      .main__footer{
+        height:50px;
+        margin-bottom:10px;
+        .form{
+          display:flex;
+          justify-content:space-between;
+          align-items:center;
+          .input-box{
+            position:relative;
+            width:100%;
+            &__text{
               border-style:none;
-              color:white;
-              height:40px;
-              width:55px;
               border-radius:30px;
+              height:50px;
+              width:780px;
+              padding:0 70px 0 30px;
               outline:0;
-              margin-left:15px;
             }
+            &__image{
+              height:50px;
+              position:absolute;
+              right:30px;
+              padding-top:3px;
+              font-size:30px;
+              &__file{
+                display:none;
+              }
+            }
+          }
+          .submit__btn{
+            background-color:rgb(0, 225, 255);
+            border-style:none;
+            color:white;
+            height:40px;
+            width:55px;
+            border-radius:30px;
+            outline:0;
+            margin-left:15px;
           }
         }
       }
       &__header{
         border-radius:30px;
         height:60px;
-        background:rgb(0, 247, 255);
+        background:rgb(87, 88, 88);
         display:flex;
         align-items:center;
-        justify-content:space-between;
-        .footer{
-          height:40px;
-          margin-left:20px;
-          .form{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            .input-box{
-              width:100%;
-              &__text{
-                border-style:none;
-                border-radius:30px;
-                height:40px;
-                width:200px;
-                padding: 0 30px 0 20px;
-                outline:0;
-              }
-            }
-            .submit__btn{
-              background-color:orange;
-              border-style:none;
-              color:white;
-              height:40px;
-              width:55px;
-              border-radius:30px;
-              outline:0;
-              margin-left:15px;
-            }
-          }
-        }
+        justify-content:center;
         &__group{
-          font-size:40px;
+          font-size:50px;
           color:white;
-          margin:0 300px 10px 0 ;
+          margin-right:30px;
+          padding-bottom:10px;
         }
         &__edit{
-          font-size:40px;
+          font-size:30px;
           margin-right:20px;
+          padding-top:10px;
           .edit{
             color:white;
           }
@@ -242,32 +201,7 @@
       }
       &__calendar{
         display:flex;
-        height:630px;
-        &__plan{
-          border-radius:0 0 0 20px;
-          width:220px;
-          background-color:lightgreen;
-          overflow: scroll;
-          padding: 0px 20px;
-          .date{
-            margin:30px 0 0 15px;
-            color:white;
-            &__nen{
-              font-size:18px;
-            }
-            &__gatu{
-              display:flex;
-              &__tuki{
-                font-size:25px;
-                margin-left:10px;
-              }
-              &__niti{
-                font-size:38px;
-                margin:5px 0 0 5px;
-              }
-            }
-          }
-        }
+        height:625px;
         &__content{
           border-radius:20px;
           width:850px;

@@ -13,6 +13,6 @@
       .center__bottom
         - @calendars.calendars.each do |calendar|
           .center__bottom__list
-            = link_to group_messages_path(calendar), class:"a" do
+            = link_to group_calendar_messages_path(calendar.group, calendar), class:"a" do
               .center__bottom__list__name
                 = calendar.date
