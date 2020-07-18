@@ -1,17 +1,14 @@
 .hoom
   .light
     .main
-      .main__top
-        %h2.main__top__name
-          = current_user.name
-        .main__footer
-          = form_with model: [@group, @calendar, @message], html: {class: "form"}, local: true do |f|
-            .input-box
-              = f.text_field :content, class: 'input-box__text', placeholder: 'message'
-              = f.label :image, class: 'input-box__image' do
-                = icon('fas', 'camera', class: 'input-box__icon')
-                = f.file_field :image, class: 'input-box__image__file'
-            = f.submit 'Go', class: 'submit__btn'
+      .main__footer
+        = form_with model: [@group, @calendar, @message], html: {class: "form"}, local: true do |f|
+          .input-box
+            = f.text_field :content, class: 'input-box__text', placeholder: 'message'
+            = f.label :image, class: 'input-box__image' do
+              = icon('fas', 'camera', class: 'input-box__icon')
+              = f.file_field :image, class: 'input-box__image__file'
+          = f.submit 'Go', class: 'submit__btn'
       .main__header
         %h4.main__header__group
           = @group.name
@@ -19,6 +16,5 @@
           = link_to edit_group_path(@group) do
             = icon('fas', 'cog', class:'edit')
       .main__calendar
-        .main__calendar__plan
         .main__calendar__content
-          = render partial: 'message', collection: @messages
+          = render @messages

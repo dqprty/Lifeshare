@@ -13,7 +13,7 @@ class CalendarsController < ApplicationController
   def create
     @calendar = @group.calendars.new(calendar_params)
     if @calendar.save
-      redirect_to group_calendars_path(@group)
+      redirect_to group_calendars_path(@group, @calendar)
     else
       render :new
     end
@@ -22,7 +22,7 @@ class CalendarsController < ApplicationController
   private
 
   def calendar_params
-    params.require(:calendar).permit(:date).merge(user_id: current_user.id, group_id:[])
+    params.require(:calendar).permit(:date).merge(user_id: current_user.id)
   end
 
   def set_group
